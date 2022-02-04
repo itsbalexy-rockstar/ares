@@ -1,0 +1,118 @@
+.ares__main-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.ares__navbar {
+  background-color: $color-2;
+  border-right: 6px solid $color-1;
+  color: $color-4;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 400px;
+}
+
+.ares__navbar-user {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    font-weight: bold;
+    margin: 15px;
+  }
+}
+
+.ares__search {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.ares__search-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.ares__search-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $color-0;
+  border-radius: 5px;
+  color: $color-0;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 10px;
+  width: 100%;
+  transition: border-bottom 0.3s ease;
+  &:focus {
+    border-bottom: 2px solid $color-3;
+    outline: none;
+  }
+}
+
+.ares__search-icon {
+  background-color: $color-2;
+  border: none;
+  color: $color-0;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px 0px;
+  padding: 2px 0;
+  font-weight: bolder;
+  border-radius: 6px;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $color-4;
+  }
+}
+
+.ares__menu-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.ares__menu-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.ares__menu-subtitle {
+  color: $color-0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ares__menu-data {
+  border: 2px solid $color-2;
+  border-radius: 8px;
+  display: flex;
+  margin-top: 40px;
+  padding: 25px;
+  flex-direction: column;
+}
+
+.ares__menu-data-precio,
+.ares__menu-data-promedio,
+.ares__menu-data-healtscore {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  padding: 15px;
+  h5 {
+    font-size: 20px;
+  }
+}
+
+.ares__contador{
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  margin: 18px;
+}
+

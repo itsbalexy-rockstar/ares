@@ -1,0 +1,103 @@
+.auth__main {
+  align-items: center;
+  background-image: url("../../assets/authBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  &:before {
+    background: linear-gradient($color-1, $color-4);
+    bottom: 0;
+    content: "";
+    height: 100vh;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.auth__container {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+}
+
+.auth__title {
+    color: $color-4;
+    font-family: $font-secondary;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.auth__subtitle {
+    color: $color-4;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.auth__input {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid $color-4;
+    color: $color-4;
+    font-size: 26px;
+    height: 30px;
+    margin-bottom: 10px;
+    transition: border-bottom .2s ease;
+    width: 100%;
+    &:focus{
+        border-bottom: 3px solid $color-2;
+        outline: none;
+    }
+    &::placeholder{
+        color: $color-4;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+.auth__social {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.auth__new-account {
+    color: $color-4;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.auth__password-info{
+    color: $color-4;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.auth__alert-error{
+    background-color: $color-2;
+    border-radius: 5px;
+    color: $color-1;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 6px;
+    text-align: center;
+}
+
+

@@ -1,0 +1,25 @@
+.recipes__search{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+}
+
+.recipes__menu{
+   background-color: $color-4;
+   height: 100%;
+   position: relative;
+   width: 25%;
+}
+
+.recipes__grid{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px;
+}
+
+.recipes__grid-item{
+    background-color: $color-2;
+    padding: 10px;
+}
